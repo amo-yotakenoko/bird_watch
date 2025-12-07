@@ -1,0 +1,30 @@
+ping 192.168.11.52
+
+ping raspberry.pi
+
+ssh  user@192.168.11.52
+
+
+
+
+
+pip install pipreqs
+pipreqs .
+pip install -r requirements.txt
+
+sudo apt update -y
+sudo apt upgrade -y
+
+deactivate
+rm -r venv
+sudo apt install python3-pil -y
+sudo apt install python3-opencv -y
+sudo apt install python3-flask -y
+sudo apt install python3-markupsafe -y
+sudo apt install python3-werkzeug -y
+sudo apt install pip -y
+
+python3 -m venv venv --system-site-packages
+source venv/bin/activate
+
+

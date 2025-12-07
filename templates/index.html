@@ -1,0 +1,19 @@
+<html>
+
+
+
+<body>
+
+<form action="{{ url_for('cam_restart') }}" method="post">
+	<button type="submit">カメラ再読み込み</button>
+</form>
+
+{% for i in range(len) %}
+
+<img src="{{ url_for('video', index=i) }}">
+{% endfor %}
+
+	
+</body>
+
+</html>
